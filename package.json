@@ -1,0 +1,38 @@
+{
+  "name": "react-babel-plugin-playground",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "babel-plugin-jsx-if-directive": "^0.1.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-scripts": "3.1.1"
+  },
+  "scripts": {
+    "start": "npm run clear && react-app-rewired start",
+    "debug": "npm run clear && react-app-rewired --inspect start",
+    "build": "react-app-rewired  build",
+    "test": "react-app-rewired  test",
+    "eject": "react-app-rewired  eject",
+    "clear": "rimraf -rf ./node_modules/.cache/babel-loader/*"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "customize-cra": "^0.7.0",
+    "react-app-rewired": "^2.1.3"
+  }
+}
